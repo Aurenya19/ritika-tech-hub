@@ -4,45 +4,118 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ritika's Tech Hub 🚀</title>
-<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;padding:20px}.container{max-width:1400px;margin:0 auto;background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,0.3)}.header{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;padding:30px;text-align:center}.tabs{display:flex;background:#f8f9fa;overflow-x:auto}.tab{padding:15px 25px;border:none;background:transparent;cursor:pointer}.tab.active{background:#fff;border-bottom:3px solid #667eea}.content{padding:30px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}.card{background:#f8f9fa;padding:20px;border-radius:10px}.btn{background:#667eea;color:#fff;border:none;padding:12px 24px;border-radius:8px;cursor:pointer;width:100%;margin-top:10px}</style>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;padding:20px}
+.container{max-width:1400px;margin:0 auto;background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,0.3);overflow:hidden}
+.header{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;padding:40px;text-align:center}
+.header h1{font-size:3em;margin-bottom:10px}
+.content{padding:40px}
+.welcome{background:linear-gradient(135deg,rgba(102,126,234,0.1),rgba(118,75,162,0.1));padding:30px;border-radius:15px;margin-bottom:30px;text-align:center}
+.welcome h2{color:#333;margin-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin-top:30px}
+.card{background:#f8f9fa;padding:25px;border-radius:15px;box-shadow:0 4px 15px rgba(0,0,0,0.1);transition:transform 0.3s}
+.card:hover{transform:translateY(-5px)}
+.card h3{color:#667eea;margin-bottom:15px;font-size:1.5em}
+.card p{color:#666;margin-bottom:20px}
+.btn{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;border:none;padding:12px 20px;border-radius:8px;cursor:pointer;width:100%;margin-top:10px;font-size:1em;transition:all 0.3s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 5px 15px rgba(102,126,234,0.4)}
+.stats{display:flex;justify-content:center;gap:30px;margin:30px 0;flex-wrap:wrap}
+.stat-box{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:20px 40px;border-radius:10px;text-align:center}
+.stat-box .number{font-size:2.5em;font-weight:bold;display:block}
+.stat-box .label{font-size:0.9em;opacity:0.9}
+@media(max-width:768px){.header h1{font-size:2em}.grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <div class="container">
 <div class="header">
 <h1>🚀 Ritika's Tech Hub</h1>
-<p>Your Complete Learning Platform</p>
+<p style="font-size:1.2em;opacity:0.9">Your Complete Learning & Development Platform</p>
 </div>
 <div class="content">
-<h2>Welcome Ritika! 👋</h2>
-<p>Aaj kya seekhna hai? Let's start learning!</p>
+<div class="welcome">
+<h2>Welcome back, Ritika! 👋</h2>
+<p style="font-size:1.1em">Aaj kya seekhna hai? Let's continue your journey!</p>
+</div>
+
+<div class="stats">
+<div class="stat-box">
+<span class="number">7</span>
+<span class="label">Day Streak 🔥</span>
+</div>
+<div class="stat-box">
+<span class="number">2450</span>
+<span class="label">Points ⭐</span>
+</div>
+<div class="stat-box">
+<span class="number">156</span>
+<span class="label">Problems Solved 💻</span>
+</div>
+</div>
+
 <div class="grid">
 <div class="card">
 <h3>📚 Content Library</h3>
-<p>20+ curated resources</p>
-<button class="btn" onclick="window.open('https://www.youtube.com/results?search_query=react+hooks+hindi','_blank')">React Hooks</button>
-<button class="btn" onclick="window.open('https://www.geeksforgeeks.org/array-data-structure/','_blank')">DSA Arrays</button>
-<button class="btn" onclick="window.open('https://leetcode.com/problemset/all/','_blank')">LeetCode</button>
+<p>Curated learning resources from across the internet</p>
+<button class="btn" onclick="window.open('https://www.youtube.com/results?search_query=react+hooks+hindi+tutorial','_blank')">React Hooks (Hindi)</button>
+<button class="btn" onclick="window.open('https://www.geeksforgeeks.org/data-structures/','_blank')">DSA Complete Guide</button>
+<button class="btn" onclick="window.open('https://javascript.info/','_blank')">JavaScript Advanced</button>
+<button class="btn" onclick="window.open('https://www.youtube.com/results?search_query=system+design+hindi','_blank')">System Design</button>
+<button class="btn" onclick="window.open('https://roadmap.sh/ai-data-scientist','_blank')">ML Roadmap</button>
 </div>
+
 <div class="card">
-<h3>💪 Challenges</h3>
-<p>Daily coding challenges</p>
+<h3>💪 Daily Challenges</h3>
+<p>Practice coding problems and improve your skills</p>
 <button class="btn" onclick="window.open('https://leetcode.com/problems/reverse-linked-list/','_blank')">Today's Challenge</button>
-<button class="btn" onclick="window.open('https://www.hackerrank.com/','_blank')">HackerRank</button>
+<button class="btn" onclick="window.open('https://leetcode.com/problemset/all/','_blank')">LeetCode Problems</button>
+<button class="btn" onclick="window.open('https://www.hackerrank.com/domains/algorithms','_blank')">HackerRank</button>
+<button class="btn" onclick="window.open('https://www.codechef.com/practice','_blank')">CodeChef Practice</button>
 </div>
+
 <div class="card">
-<h3>🗺️ Roadmaps</h3>
-<p>Learning paths</p>
-<button class="btn" onclick="window.open('https://roadmap.sh/full-stack','_blank')">Full Stack</button>
-<button class="btn" onclick="window.open('https://roadmap.sh/frontend','_blank')">Frontend</button>
-<button class="btn" onclick="window.open('https://roadmap.sh/backend','_blank')">Backend</button>
+<h3>🗺️ Learning Roadmaps</h3>
+<p>Step-by-step paths to master different technologies</p>
+<button class="btn" onclick="window.open('https://roadmap.sh/full-stack','_blank')">Full Stack Developer</button>
+<button class="btn" onclick="window.open('https://roadmap.sh/frontend','_blank')">Frontend Developer</button>
+<button class="btn" onclick="window.open('https://roadmap.sh/backend','_blank')">Backend Developer</button>
+<button class="btn" onclick="window.open('https://roadmap.sh/devops','_blank')">DevOps Engineer</button>
+<button class="btn" onclick="window.open('https://roadmap.sh/ai-data-scientist','_blank')">AI/ML Engineer</button>
 </div>
+
 <div class="card">
-<h3>📰 Tech News</h3>
-<p>Latest updates</p>
+<h3>📰 Tech News & Updates</h3>
+<p>Stay updated with latest tech trends and news</p>
 <button class="btn" onclick="window.open('https://techcrunch.com/','_blank')">TechCrunch</button>
 <button class="btn" onclick="window.open('https://dev.to/','_blank')">Dev.to</button>
 <button class="btn" onclick="window.open('https://news.ycombinator.com/','_blank')">Hacker News</button>
+<button class="btn" onclick="window.open('https://medium.com/tag/technology','_blank')">Medium Tech</button>
+<button class="btn" onclick="window.open('https://yourstory.com/','_blank')">YourStory</button>
 </div>
+
+<div class="card">
+<h3>🎓 Free Courses</h3>
+<p>Complete courses to learn new technologies</p>
+<button class="btn" onclick="window.open('https://www.freecodecamp.org/','_blank')">FreeCodeCamp</button>
+<button class="btn" onclick="window.open('https://www.coursera.org/','_blank')">Coursera</button>
+<button class="btn" onclick="window.open('https://www.udemy.com/courses/free/','_blank')">Udemy Free</button>
+<button class="btn" onclick="window.open('https://www.youtube.com/@freecodecamp','_blank')">FCC YouTube</button>
+</div>
+
+<div class="card">
+<h3>🛠️ Developer Tools</h3>
+<p>Essential tools for developers</p>
+<button class="btn" onclick="window.open('https://github.com/','_blank')">GitHub</button>
+<button class="btn" onclick="window.open('https://stackoverflow.com/','_blank')">Stack Overflow</button>
+<button class="btn" onclick="window.open('https://www.figma.com/','_blank')">Figma</button>
+<button class="btn" onclick="window.open('https://vercel.com/','_blank')">Vercel Deploy</button>
+</div>
+</div>
+
+<div style="text-align:center;margin-top:50px;padding:30px;background:#f8f9fa;border-radius:15px">
+<h2 style="color:#667eea;margin-bottom:15px">🎯 Your Learning Stats</h2>
+<p style="color:#666;font-size:1.1em">Keep learning, keep growing! You're doing amazing! 🚀</p>
 </div>
 </div>
 </div>
